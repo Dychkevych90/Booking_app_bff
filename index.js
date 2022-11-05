@@ -1,5 +1,5 @@
 const authRoute = require("./routes/auth");
-const hotelsRoute = require("./routes/auth");
+const hotelsRoute = require("./routes/hotels");
 const roomsRoute = require("./routes/auth");
 const usersRoute = require("./routes/auth");
 
@@ -12,6 +12,8 @@ const { API_PORT } = process.env;
 
 //connection to database
 connection();
+
+app.use(express.json());
 
 app.use('/api/auth', authRoute);
 app.use('/api/hotels', hotelsRoute);
