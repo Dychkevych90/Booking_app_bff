@@ -20,6 +20,6 @@ router.delete("/:id",verifyAdmin, deleteHotel);
 //GET
 router.get("/find/:id", getHotel);
 //GET ALL
-router.get("/", getHotels);
+router.get("/",verifyAdmin, getHotels);
 
 module.exports = router;
