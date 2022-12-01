@@ -1,6 +1,6 @@
 const authRoute = require("./routes/auth");
 const hotelsRoute = require("./routes/hotels");
-const roomsRoute = require("./routes/users");
+const roomsRoute = require("./routes/rooms");
 const usersRoute = require("./routes/users");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
